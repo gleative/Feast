@@ -1,4 +1,3 @@
 package com.example.gleative.feast.models
 
-class Ingredient {
-}
+class Ingredient(name: String, ingredientType: IngredientType)
