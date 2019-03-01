@@ -1,3 +1,3 @@
 package com.example.gleative.feast.models
 
-class Meal
+class Meal(name: String, ingredients: ArrayList<Ingredient>)
