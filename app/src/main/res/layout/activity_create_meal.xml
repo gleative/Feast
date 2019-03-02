@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CreateMeal">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_meal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <EditText
+        android:id="@+id/edittext_meal_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_meal_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/text_input_meal_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/edittext_meal_desc"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <FrameLayout
+        android:id="@+id/container_add_ingredient"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button_add_ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add ingredients"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_input_meal_desc"/>
+
+    <Button
+        android:id="@+id/button_add_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add step"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_add_ingredients"/>
+
+    <Button
+        android:id="@+id/button_create_meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Create"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

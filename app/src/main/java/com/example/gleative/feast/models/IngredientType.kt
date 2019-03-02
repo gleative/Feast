@@ -4,5 +4,6 @@ enum class IngredientType {
     VEGETABLE,
     MEAT,
     SPICE,
-    FRUIT
+    FRUIT,
+    DIARY
 }
